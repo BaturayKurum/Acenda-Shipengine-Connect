@@ -1,0 +1,30 @@
+{
+  "name": "acenda-shipengine",
+  "description": "Acenda",
+  "version": "1.0.0",
+  "author": "BaturayKurum",
+  "appId": "792294d1-406e-47e0-8ac5-99aaf89f79b0",
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "ShipEngine",
+    "order app"
+  ],
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/serve.js",
+    "watch": "tsc --watch"
+  },
+  "types": "lib/index.ts",
+  "dependencies": {
+    "@shipengine/connect-order-source-api": "^3.13.9",
+    "@shipengine/connect-runtime": "^1.1.0"
+  }
+}
